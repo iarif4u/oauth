@@ -11,5 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js(['resources/js/app.js','resources/js/bootstrap.js'], 'public/js')
+mix.js(['resources/js/app.js','resources/js/bootstrap.js','resources/js/sb-admin-2.js'], 'public/js')
+    .js(['resources/js/flot-data.js','resources/js/morris-data.js'], 'public/js')
+   .less('resources/less/sb-admin-2.less', 'public/sb-admin/css')
    .sass('resources/sass/app.scss', 'public/css');

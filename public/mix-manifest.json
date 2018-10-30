@@ -1,4 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/sb-admin/css/sb-admin-2.css": "/sb-admin/css/sb-admin-2.css",
+    "/css/app.css": "/css/app.css",
+    "/js/flot-data.js": "/js/flot-data.js"
 }

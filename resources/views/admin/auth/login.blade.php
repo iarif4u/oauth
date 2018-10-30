@@ -1,11 +1,11 @@
 @extends('admin.layout.auth')
-
+@section('title',"Admin Login")
 @section('content')
     <div class="container">
         <div class="row center-div">
             <form autocomplete="off" class="login" role="form" method="POST" action="{{ url('/admin/login') }}">
                 {{ csrf_field() }}
-                <h1 class="login-title">Simple Login</h1>
+                <h1 class="login-title">Admin Login</h1>
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <input type="email" placeholder="E-Mail Address" class="login-input form-control" name="email" value="{{
@@ -14,7 +14,7 @@
 
                     @if ($errors->has('email'))
                         <span class="help-block validate-error">
-                            <strong>{{ $errors->first('email') }}</strong>
+                            <strong>{!! $errors->first('email') !!}</strong>
                         </span>
                     @endif
                 </div>
@@ -25,7 +25,7 @@
 
                     @if ($errors->has('password'))
                         <span class="help-block validate-error">
-                            <strong>{{ $errors->first('password') }}</strong>
+                            <strong>{!! $errors->first('password') !!}</strong>
                         </span>
                     @endif
                 </div>

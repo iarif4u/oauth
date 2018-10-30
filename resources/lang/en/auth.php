@@ -14,6 +14,6 @@ return [
     */
 
     'failed' => 'Username or password doesn\'t not match',
-    'throttle' => 'Too many login attempts. Try again in :seconds seconds.',
+    'throttle' => 'Too many login attempts. Try again in <span class="attempt-error">:seconds</span> seconds.',
 
 ];
